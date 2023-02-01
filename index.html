@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tela de Login</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnSignin">Sign in</button>
+            <button id="btnSignup">Sign up</button>
+        </div>
+
+        <form action="#" method="post" id="signin">
+            <input type="text" name="login" id="ilogin" placeholder="Email" required>
+            <i class='bx bxs-envelope iemail'></i>
+            <input type="password" name="pass" id="ipass" required placeholder="Password" min="8">
+            <i class='bx bxs-key ipassword'></i>
+            <div class="divCheck">
+                <input type="checkbox" name="check" id="icheck">
+                <span id="remenber">Remenber Password</span>
+            </div>
+            <button type="submit">Sign in</button>
+        </form>
+
+        <form action="#" method="post" id="signup">
+            <input type="text" name="login" id="ilogin" placeholder="Email" required>
+            <i class='bx bxs-envelope iemail'></i>
+            <input type="password" name="pass" id="ipass" required placeholder="Password">
+            <i class='bx bxs-key ipassword'></i>
+            <input type="password" name="pass2" id="ipass2" required placeholder="Confirm Password">
+            <i class='bx bxs-key ipassword2'></i>
+            <div class="divCheck">
+                <input type="checkbox" name="check" id="icheck" required>
+                <span><a href="#">Terms and conditions!</a></span>
+            </div>
+            <button type="submit">Sign in</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
